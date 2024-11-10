@@ -2,9 +2,10 @@ import axios from 'axios';
 
 const LoaderAllItems = async (detail, link) => {
     try {
-        const url = (`http://localhost:3001/users/list`)
-        const res = await axios.get(url)
-        detail(res.data.body)
+        const res = await axios.get(link)
+        console.log(res.data.setup)
+        console.log(res.data.punchline)
+        detail(res)
         
     } catch (error) {
         console.error(error);

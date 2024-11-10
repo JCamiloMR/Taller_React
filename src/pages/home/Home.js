@@ -1,12 +1,14 @@
 import React from "react";
-import Title from "../../components/Test";
+import Title from "../../components/Title";
+import Boton_R from "../../components/Boton_";
+
 
 
 const Home = () => {
     return (
         <div className="container">
             <Title/>
-            <a href="/main">Iniciar</a>
+            <Boton_R></Boton_R>
         </div>
     )
 }
